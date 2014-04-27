@@ -7,7 +7,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', index, name='index'),   
-    url(r'^/admin/', include(admin.site.urls)),
+    url(r'^admin/', include(admin.site.urls)),
 
 )
 
