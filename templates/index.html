@@ -19,27 +19,42 @@ Titulo de la pagina
 		</div>
 		<div class="col-md-9 col-md-offset-1">
 			<div id="welcome"> 
-				
 					Hi! 
-				
-				I'm 
-			<strong>Jorge Perez</strong>
-			<br/>
-			<span style="color:red; /*font-family: 'Cutive Mono', serif;
-			*/font-family:Garamond, Georgia, serif;"><b>{Programmer}</b></span>  and a <span style="color:green; /*font-family: 'Cutive Mono', serif;*/ font-family:Garamond, Georgia, serif;
+					I'm 
+				<strong>Jorge Perez</strong>
+				<br/>
+				<span style="color:red; /*font-family: 'Cutive Mono', serif;
+				*/font-family:Garamond, Georgia, serif;"><b>{Programmer}</b></span>  and a <span style="color:green; /*font-family: 'Cutive Mono', serif;*/ font-family:Garamond, Georgia, serif;
 
-			"><b>&lt;Web Developer&gt;</b></span> 
+				"><b>&lt;Web Developer&gt;</b></span> 
 
-			<br>
+				<br>
 			 
+			</div>
 		</div>
 	</div>
 </div>
-aaa
+
 <div id="section-2">
-	<div class="container" >
+	<div class="container" style="color:white;">
 		<div class="row">
-		a
+			<div class="">
+				<center>
+				<h1>
+					<i class="fa fa-briefcase"></i>
+					<br>
+					PROJECTS
+
+				</h1>
+				</center>
+			</div>
+			<div>
+				{% for project in projects  %}
+					<div class="col-sm-2">
+						<img src="{{project.medium.url}}">
+					</div>
+				{% endfor %}
+			</div>
 		</div>
 	</div>
 </div>
