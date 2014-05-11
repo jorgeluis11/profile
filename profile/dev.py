@@ -11,3 +11,4 @@ DATABASES = {
 }
 
 INSTALLED_APPS += ("debug_toolbar",)
+DEBUG_TOOLBAR_PATCH_SETTINGS = False

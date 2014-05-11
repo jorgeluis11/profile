@@ -11,7 +11,7 @@ class ProjectManager(models.Manager):
 
 
 def get_url_large(self, filename):
-    return 'media/img/large/%s' % (filename)
+    return 'img/large/%s' % (filename)
 
 
 def get_url_medium(self, filename):

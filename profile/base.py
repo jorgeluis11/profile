@@ -1,5 +1,6 @@
 from os.path import abspath, basename, dirname, join, normpath
 from sys import path
+import os
 
 """
 Django settings for notitaspr project.
@@ -21,6 +22,11 @@ SITE_ROOT = dirname(DJANGO_ROOT)
 # Site name:
 SITE_NAME = basename(DJANGO_ROOT)
 
+PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
+
+MEDIA_ROOT = os.path.join(PROJECT_PATH, 'media')
+
+
 # Add our project to our pythonpath, this way we don't need to type our project
 # name in our dotted import paths:
 path.append(DJANGO_ROOT)
@@ -29,7 +35,6 @@ path.append(DJANGO_ROOT)
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
@@ -83,7 +88,10 @@ MIDDLEWARE_CLASSES = (
 
 )
 
+########## URL CONFIGURATION
+# See: https://docs.djangoproject.com/en/dev/ref/settings/#root-urlconf
 ROOT_URLCONF = 'profile.urls'
+########## END URL CONFIGURATION
 
 WSGI_APPLICATION = 'profile.wsgi.application'
 
@@ -130,11 +138,15 @@ TEMPLATE_DIRS = (normpath(join(DJANGO_ROOT, 'templates')))
 
 ########## MEDIA CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#media-root
-MEDIA_ROOT = normpath(join(DJANGO_ROOT, 'media'))
+MEDIA_ROOT = normpath(join(SITE_ROOT, 'media'))
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#media-url
 MEDIA_URL = '/media/'
 ########## END MEDIA CONFIGURATION
 
+print "BASE!: ", BASE_DIR
+PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
 
+MEDIA_ROOT = os.path.join(PROJECT_PATH, 'media')
 
+print "MEDIA: ", MEDIA_ROOT
