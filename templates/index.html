@@ -5,6 +5,7 @@
 {% block otherjs %}
 <script src="{% static 'js/sharrre.min.js' %}"></script>
 <SCRIPT TYPE="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></SCRIPT>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.1/modernizr.min.js"></script>
 {% endblock otherjs %}
 
 {% block title %}
@@ -12,50 +13,7 @@ Titulo de la pagina
 {% endblock title %}
 
 {% block body %}
-<div class="container">
-	<div class="row" id="section-1">
-		<div class="col-md-2">
-			<img class="img-circle" src="{% static 'img/cutmypic2.png' %}">
-		</div>
-		<div class="col-md-9 col-md-offset-1">
-			<div id="welcome"> 
-					Hi! 
-					I'm 
-				<strong>Jorge Perez</strong>
-				<br/>
-				<span style="color:red; /*font-family: 'Cutive Mono', serif;
-				*/font-family:Garamond, Georgia, serif;"><b>{Programmer}</b></span>  and a <span style="color:green; /*font-family: 'Cutive Mono', serif;*/ font-family:Garamond, Georgia, serif;
-
-				"><b>&lt;Web Developer&gt;</b></span> 
-
-				<br>
-			 
-			</div>
-		</div>
-	</div>
-</div>
-
-<div id="section-2">
-	<div class="container" style="color:white;">
-		<div class="row">
-			<div class="">
-				<center>
-				<h1>
-					<i class="fa fa-briefcase"></i>
-					<br>
-					PROJECTS
-
-				</h1>
-				</center>
-			</div>
-			<div>
-				{% for project in projects  %}
-					<div class="col-sm-2">
-						<img src="{{project.medium.url}}">
-					</div>
-				{% endfor %}
-			</div>
-		</div>
-	</div>
-</div>
+	{% include "sections/section1.html" %}
+	{% include "sections/section2.html" %}
+	{% include "sections/section4.html" %}
 {% endblock body %}

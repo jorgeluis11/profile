@@ -25,7 +25,7 @@ class Projects(models.Model):
     # medium = models.ImageField(upload_to=get_url_medium,blank=True)
     # medium = models.ImageField(upload_to=get_url_medium,blank=True)
     medium = ImageSpecField(source='large',
-                            processors=[ResizeToFill(400, 400)],
+                            # processors=[ResizeToFill(400, 400)],
                             format='JPEG',
                             options={'quality': 60})
     description = models.TextField(max_length=2000)
