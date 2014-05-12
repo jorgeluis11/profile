@@ -52,7 +52,8 @@
 	{
 		height: 50px;
 		border:0;
-		background-color: #282828 ;
+	/*	background-color: #282828 ;*/
+	background-color: #1A1A1A;
 		border-radius: 0 !important;
 	}
 	.navbar-nav>li>a
@@ -92,20 +93,23 @@
 
 	#section-1
 	{
-		margin-top: 20%;
-		margin-bottom: 20%;
+		padding-top: 20%;
+		padding-bottom: 20%;
 	}
 
 	#section-2
 	{
+		padding-top: 8%;
 		background-color: #4299DC;
 		padding-bottom: 50px;
 	}
 
-	#section-3
+	#section-4
 	{
-		padding-top: 10%;
-		padding-bottom: 2%;
+		background-color: #1A1A1A;
+		color:white;
+		padding-top: 20%;
+		padding-bottom: 20%;
 	}
 
 	/*.info-container
@@ -198,6 +202,7 @@
 		border-left: white 1px solid;
 		border-right: white 1px solid;
 		border-top: white 1px solid;
+		border-bottom: white 1px solid;
 		-webkit-transition: all 1s ease;
 		transition: all 1s ease;
 -webkit-transition: all .1s ease;
@@ -280,11 +285,7 @@
 		cursor: pointer;
 	}
 
-	#section-3
-	{
-		background-color: #1A1A1A;
-		color:white;
-	}
+	
 
 	.social{
 		color:white;
@@ -316,7 +317,7 @@
 	}
 	.socia-network
 	{
-		margin-top: 2%;
+		margin-top: 4%;
 	}
 
 	.twitter
@@ -389,8 +390,22 @@
 	</style>
 </head>
 <body>
+
 {% include "header.html" %}
 {% block body %}{% endblock body %}
+
 {% include "footer.html" %}
+
+
+<script src="{{STATIC_URL}}js/smooth-scroll.js"></script>
+<script>
+smoothScroll.init({
+    speed: 500, // Integer. How fast to complete the scroll in milliseconds
+    easing: 'easeInOutCubic', // Easing pattern to use
+    updateURL: false, // Boolean. Whether or not to update the URL with the anchor hash on scroll
+    offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+    callbackBefore: function ( toggle, anchor ) {}, // Function to run before scrolling
+    callbackAfter: function ( toggle, anchor ) {} // Function to run after scrolling
+});</script>
 </body>
 </html>
