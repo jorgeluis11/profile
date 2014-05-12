@@ -108,7 +108,7 @@
 		padding-bottom: 2%;
 	}
 
-	.info-container
+	/*.info-container
 	{
 		-webkit-box-shadow: none;
 		-moz-box-shadow: none;
@@ -121,29 +121,87 @@
 		-moz-transition-duration: 0.3s;
 		-o-transition-duration: 0.3s;
 		transition-duration: 0.3s;
+
+	}*/
+
+	.project
+	{
+		width: 300px;
+		margin: 5px auto;
+
+	}
+
+
+	#project-row
+	{
+		margin: auto;
+		width: 90%;
+		max-width: 968px;
+	}
+
+	.info-container
+	{
+		display: inline-block;
+		/*border-left: solid white 1px;
+		border-right: solid white 1px;
+		border-bottom: solid white 1px;*/
+		margin-bottom: 0px;
+		padding-left: 2%;
+		padding-right: 1%;
+		font-size: 1.2em;
+		position: absolute;
+		width: 90%;
+		z-index: 100;
+		background: rgba( 26,26,26,0.95);
+		bottom: 0;
+		height: 100%;
+		opacity: 0;
+		-webkit-transition: opacity .1s ease;
+		transition: opacity .1s ease;
+		
 		
 	}
 
+
 	.project:hover>.info-container
 	{
-		background-color: rgba(255,255,255,0.9);
-		color: #4299DC;
-		
+		opacity: 1;
+		cursor: pointer;
+		/*background-color: rgba(255,255,255,0.9);*/
+		/*color: #4299DC;*/
 	}
+
+
 	.img-container{
 		width: 100%;
 		height: 200px;
+		
+	
+	}
+
+	.project:hover>.img-container>div
+	{
+		cursor: pointer;
+		/*background-color: rgba(255,255,255,0.9);*/
+		/*color: #4299DC;*/
+	/*	-webkit-transition: : top .1s ease;
+		transition: top .1s ease;*/
+		background-size: 125% 115%;	
+		
 	}
 	
 	.img-container>div{
 		width: 100%;
 		height: 100%;
-		background-size: 150% 100%;
+		background-size: 110% 100%;
 		background-position: center center;
 		border-left: white 1px solid;
 		border-right: white 1px solid;
 		border-top: white 1px solid;
-
+		-webkit-transition: all 1s ease;
+		transition: all 1s ease;
+-webkit-transition: all .1s ease;
+		transition:  all .1s ease;
 	}
 
 	.project-title
@@ -151,16 +209,26 @@
 		margin-top:0; 
 		padding-top: 10px;
 	}
-	.info-container
-	{
-		border-left: solid white 1px;
-		border-right: solid white 1px;
-		border-bottom: solid white 1px;
-		margin-bottom: 0px;
-		padding-left: 2%;
-		padding-right: 1%;
-		font-size: 1.2em;
 
+	
+
+	@media ( max-width: 1200px)
+	{
+		body
+		{
+		}
+
+		.project
+		{
+
+			float:none !important;
+		}
+
+		.img-container
+		{
+			width: 100%;
+			height: 200px;
+		}
 	}
 
 	.col-sm-4
@@ -207,6 +275,7 @@
 	{	
 		color: white;
 		background: #4299DC;
+		
 		text-shadow: none;
 		cursor: pointer;
 	}
@@ -247,7 +316,7 @@
 	}
 	.socia-network
 	{
-		margin-top: 5%;
+		margin-top: 2%;
 	}
 
 	.twitter
