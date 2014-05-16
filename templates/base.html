@@ -10,6 +10,12 @@
 	{% block otherjs %}{% endblock otherjs %}
 	<style type="text/css">
 
+	body
+	{
+		color: #333;
+		background-color: #fff;
+	}
+
 	@font-face {
     font-family: "Proxima Nova";
     src: url(/static/fonts/ProximaNova-Regular.otf) format("truetype");
@@ -99,16 +105,17 @@
 
 	#section-3
 	{
-		padding-top: 8%;
-		background-color: #4299DC;
-		padding-bottom: 50px;
+		border-top: #ccc solid 1px;
+		padding-top: 4%;
+/*		background-color: #4299DC;
+*/		padding-bottom: 10%;
 	}
 
 	#section-4
 	{
 		background-color: #1A1A1A;
 		color:white;
-		padding-top: 20%;
+		padding-top: 18%;
 		padding-bottom: 20%;
 	}
 
@@ -157,9 +164,11 @@
 		width: 90%;
 		z-index: 100;
 		background: rgba( 26,26,26,0.95);
+		color: white;
 		bottom: 0;
 		height: 100%;
 		opacity: 0;
+
 		-webkit-transition: opacity .1s ease;
 		transition: opacity .1s ease;
 		
@@ -387,13 +396,34 @@
 			-webkit-transition: opacity .20s ease-out;
 			transition: opacity .20s ease-out;
 		}
+
+
+		/*Section 2*/
+		#section-2
+		{
+			border-top: #ccc solid 1px;
+			padding-top: 16%;
+			padding-bottom: 22%;
+/*			background-color: #1A1A1A;
+*/
+		}
+
+		#about-me
+		{
+			text-align: center;
+
+		}
+
+		#about-me-content>h4
+		{
+			line-height: 1.5em;
+		}
 	</style>
 </head>
 <body>
 
 {% include "header.html" %}
 {% block body %}{% endblock body %}
-
 {% include "footer.html" %}
 
 
