@@ -59,13 +59,18 @@
 		height: 50px;
 		border:0;
 	/*	background-color: #282828 ;*/
-	background-color: #1A1A1A;
+		background-color: #1A1A1A;
 		border-radius: 0 !important;
 	}
 	.navbar-nav>li>a
 	{
 		color:rgba(250,250,250,1) !important;
 		font-size: 1.3em;
+	}
+
+	.navbar-nav>li:hover
+	{
+		background-color:rgba(30,30,30,1);
 	}
 	.navbar .navbar-nav {
 	  display: inline-block;
@@ -102,6 +107,38 @@
 		padding-top: 20%;
 		padding-bottom: 20%;
 	}
+
+	#section-1
+	{
+		/*opacity: 0;*/
+		-webkit-animation: fadein 2s  ease;
+		-moz-animation: fadein 2s ease;
+		-o-animation: fadein  2s  ease;
+		animation: fadein 2s ease;
+	}
+
+	@-webkit-keyframes fadein {
+
+		0% {
+	        opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@keyframes fadein{
+
+		0%{		
+	        opacity: 0;
+		}
+
+		100%{
+			opacity: 1;
+		}
+	}
+
 
 	#section-3
 	{
@@ -188,9 +225,13 @@
 	.img-container{
 		width: 100%;
 		height: 200px;
-		
-	
+		-webkit-animation: fade-in 1s  ease;
+		-moz-animation:  fade-in 1s ease;
+		-o-animation:   fade-in  1s  ease;
+		animation:  fade-in 1s ease;
+
 	}
+
 
 	.project:hover>.img-container>div
 	{
@@ -256,6 +297,8 @@
 		position: absolute;
 		bottom: 86px;
 		left: 50%;
+		width: 10px;
+		height: 10px;
 
 	}
 
@@ -265,37 +308,77 @@
 		-webkit-box-shadow: none;
 		-moz-box-shadow: none;
 		box-shadow: none;
-		-webkit-transition-property: all;
-		-moz-transition-property: all;
-		-o-transition-property: all;
-		transition-property: all;
-		-webkit-transition-duration: 0.3s;
-		-moz-transition-duration: 0.3s;
-		-o-transition-duration: 0.3s;
-		transition-duration: 0.3s;
-		color: #4299DC;
-		border: 2px solid #4299DC;
+		;
+		/*color: #4299DC;*/
+		/*border: 2px solid #4299DC;*/
+		color: #1A1A1A;
 		background: none;
 		text-shadow: none;
-		font-size: 4.4em;
+		font-size: 4.0em;
 		text-align: center;
-		-webkit-border-radius: 60px;
-		border-radius: 60px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
 		padding: 4px 12px;
-		height: 68px;
+		height: 60px;
+		-webkit-animation: pulse 3s  ease;
+		-moz-animation:  pulse 3s ease;
+		-o-animation:   pulse  3s  ease;
+		animation:  pulse 3s ease;
+		
 	}
 
 	.tag-blue:hover
 	{	
-		color: white;
-		background: #4299DC;
-		
-		text-shadow: none;
+		-webkit-animation: pulse 1s  infinite;
+		-moz-animation:  pulse 1s infinite;
+		-o-animation:   pulse  1s  infinite;
+		animation:  pulse 1s infinite;
+		/*color: white;*/
+		/*background: #4299DC;*/
+/*		background:#1A1A1A;
+*/
 		cursor: pointer;
 	}
 
 	
+	@-webkit-keyframes pulse
+	{
+		0 {
+	        -webkit-transform: scale(1);
+	        transform: scale(1);
+	    }
 
+	    50% {
+	        -webkit-transform: scale(1.2);
+	        transform: scale(1.2);
+	    }
+
+	    100% {
+	        -webkit-transform: scale(1);
+	        transform: scale(1);
+
+	    }
+	}
+
+	@keyframes pulse
+	{
+		0 {
+						color: white;
+
+	        -webkit-transform: scale(1);
+	        transform: scale(1);
+	    }
+
+	    50% {
+	        -webkit-transform: scale(1.2);
+	        transform: scale(1.2);
+	    }
+
+	    100% {
+	        -webkit-transform: scale(1);
+	        transform: scale(1);
+	    }
+	}
 	.social{
 		color:white;
 	}
@@ -430,7 +513,7 @@
 <script src="{{STATIC_URL}}js/smooth-scroll.js"></script>
 <script>
 smoothScroll.init({
-    speed: 500, // Integer. How fast to complete the scroll in milliseconds
+    speed: 1000, // Integer. How fast to complete the scroll in milliseconds
     easing: 'easeInOutCubic', // Easing pattern to use
     updateURL: false, // Boolean. Whether or not to update the URL with the anchor hash on scroll
     offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
