@@ -582,6 +582,15 @@ ul.social li:hover a p {
 }
 
 
+.facebook-size
+   {
+   	    font-size: 1em !important;
+    display: inline !important;
+
+   }
+
+
+
 
 /*Media Query for less than 720px*/
 
@@ -617,10 +626,8 @@ ul.social li:hover a p {
   }
  }
 @media (max-width: 1200px) {
-  span.visible-lg {
-    display: inline !important;
-    font-size: 1em !important;
-  }
+  
+
 
 
 
