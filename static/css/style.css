@@ -792,6 +792,11 @@ ul.social li:hover a p {
 		margin-bottom: 10px;
 	}
 
+	#hello
+	{
+		margin-bottom: 15px;
+	}
+
 }
 
 @media(max-width: 320px)
@@ -800,8 +805,12 @@ ul.social li:hover a p {
 	.project
 	{
 		width: auto;
+	}	
+
+	#section-4
+	{
+		padding-bottom: 30%;
 	}
-	
 }
 
 @media(max-height: 574px)
@@ -816,19 +825,25 @@ ul.social li:hover a p {
 		padding-top: 40%;
 	}
 
+	#section-4
+	{
+		padding-top: 10%;
+		padding-bottom: 18%;
+	}
+
 	#contact-info
 	{
 		font-size: 1.7em !important;
 	}
 
-	#social>li
+	ul.social>li>a
 	{
-		height: 200px;
+		height: 70px !important;
 	}
 
 	#hello
 	{
-		margin-bottom: 10px;
+		margin-bottom: 0px !important;
 	}
 	
 }
