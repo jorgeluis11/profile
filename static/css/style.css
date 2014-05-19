@@ -640,7 +640,7 @@ ul.social li:hover a p {
 {
 	.navbar-nav
 	{
-		font-size: 1.2em;
+		font-size: 1.0em;
 	}
 
 	#profile-pic
@@ -739,8 +739,7 @@ ul.social li:hover a p {
 
 	.navbar-nav
 	{
-
-		font-size: 105%;
+		font-size: 80% !important;
 	}
 
 	@-webkit-keyframes navbar{
@@ -821,6 +820,11 @@ ul.social li:hover a p {
 	#section-4
 	{
 		padding-bottom: 30%;
+	}
+
+	.navbar-nav
+	{
+		font-size: 70% !important;
 	}
 }
 
