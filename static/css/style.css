@@ -62,7 +62,7 @@ a:hover
 .navbar-nav>li>a
 {
 	color:#222222;
-	font-size: 1.3em;
+	font-size: 1.4em;
 }
 
 .navbar-nav>li:hover
@@ -233,7 +233,7 @@ a:hover
 {
 	background-color: #1A1A1A;
 	color:white;
-	padding-top: 18%;
+	padding-top: 15%;
 	padding-bottom: 20%;
 }
 
@@ -584,7 +584,7 @@ ul.social li:hover a p {
 
 /*Media Query for less than 720px*/
 
-@media (min-width: 1280px) {
+@media (max-width: 1280px) {
  	
  	#section-1
  	{
@@ -610,17 +610,18 @@ ul.social li:hover a p {
 	{
 		font-size: 2em;
 	}
+	  ul.navbar-nav>li>a
+  {
+  	font-size: 1.9em;
+  }
  }
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
   span.visible-lg {
     display: inline !important;
     font-size: 1em !important;
   }
 
-  ul.navbar-nav>li>a
-  {
-  	font-size: 1.9em;
-  }
+
 
 
 }
