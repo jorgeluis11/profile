@@ -583,11 +583,10 @@ ul.social li:hover a p {
 
 
 .facebook-size
-   {
-   	    font-size: 1em !important;
-    display: inline !important;
-
-   }
+{
+	font-size: 1em !important;
+	display: inline !important;
+}
 
 
 
@@ -629,7 +628,10 @@ ul.social li:hover a p {
   
 
 
-
+.facebook-size
+{
+	display: none !important;
+}
 
 
 }
