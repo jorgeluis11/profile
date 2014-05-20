@@ -91,7 +91,7 @@ a:hover
 
 #centralize
 {
-	display: flex;
+	text-align: center;
 }
 
 .navbar-animation
