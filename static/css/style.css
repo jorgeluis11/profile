@@ -563,7 +563,7 @@ ul.social li:hover a p {
 #section-2
 {
 	border-top: #ccc solid 1px;
-	padding-top: 16%;
+	padding-top: 14%;
 	padding-bottom: 26%;
 /*			background-color: #1A1A1A;
 */
@@ -579,6 +579,7 @@ ul.social li:hover a p {
 {
 	line-height: 1.5em;
 	font-size: 1.4em;
+	text-align: justify;
 }
 
 
