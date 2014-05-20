@@ -1,4 +1,2 @@
 profile
 =======
-
-My personal profile
