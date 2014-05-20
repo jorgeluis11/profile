@@ -618,7 +618,7 @@ ul.social li:hover a p {
 
 	#about-me-content>h4
 	{
-		font-size: 2em;
+		font-size: 1.9em;
 	}
 	  ul.navbar-nav>li>a
   {
@@ -714,7 +714,7 @@ ul.social li:hover a p {
 
 	#about-me-content>h4
 	{
-		font-size: 1.55em;
+		font-size: 1.49em;
 	}
 }
 
@@ -772,7 +772,7 @@ ul.social li:hover a p {
 
 	#section-2
 	{
-		padding-top: 60%;
+		padding-top: 50%;
 		padding-bottom:65%;
 	}
 
@@ -784,7 +784,7 @@ ul.social li:hover a p {
 	#about-me-content>h4
 	{
 		line-height: 1.8em;
-		font-size: 1.4em;
+		font-size: 1.44em;
 	}
 	#current-projects
 	{
@@ -818,6 +818,11 @@ ul.social li:hover a p {
 		width: auto;
 	}	
 
+	#section-2
+	{
+		padding-top: 30%;
+	}
+
 	#section-4
 	{
 		padding-bottom: 30%;
@@ -826,6 +831,12 @@ ul.social li:hover a p {
 	.navbar-nav
 	{
 		font-size: 70% !important;
+	}
+
+	#about-me-content>h4
+	{
+		line-height: 1.8em;
+		font-size: 1.37em;
 	}
 }
 
@@ -838,7 +849,7 @@ ul.social li:hover a p {
 	}
 	#section-2
 	{
-		padding-top: 40%;
+		padding-top: 30%;
 	}
 
 	#section-4
