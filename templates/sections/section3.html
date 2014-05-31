@@ -1,49 +1,49 @@
 <div id="section-3" >
 	<div class="container">
-	<div class="row" id="project-row">
-		<div class="">
-			<center>
-				<h1 id="current-projects">
-					<br>
-					CURRENT PROJECTS 
-					<span class="visible-xs"></span>
-					<span id="and-sign">&#38;</span> 
-					<span class="visible-xs"></span> 
-					PREVIOUS WORK
-				</h1>
-			</center>
-		</div>
+		<div class="row" id="project-row">
+			<div class="">
+				<center>
+					<h1 id="current-projects">
+						<br>
+						CURRENT PROJECTS
+						<span class="visible-xs"></span>
+						<span id="and-sign">&#38;</span>
+						<span class="visible-xs"></span>
+						PREVIOUS WORK
+					</h1>
+				</center>
+			</div>
 
-		<!--<div class="col-xs-1 tag">
-			<h5>
-				Press me
-			</h5>
-		</div>
-		<div style="clear:both;" class="clear"></div>
-									<hr>
-								-->
-		<div>
-			{% for project in projects  %}
-				<div  class="col-md-3 project" >
-					<div class="img-container">
-						<div style="background-image: url('{{project.large.url}}');"></div>
+			<!--<div class="col-xs-1 tag">
+				<h5>
+					Press me
+				</h5>
+			</div>
+			<div style="clear:both;" class="clear"></div>
+										<hr>
+									-->
+			<div>
+				{% for project in projects  %}
+					<div  class="col-md-3 project" >
+						<div class="img-container">
+							<div style="background-image: url('{{project.large.url}}');"></div>
+						</div>
+						<div class="info-container">
+							<h1 class="project-title">{{project.title}}</h1>
+							<p>{{project.description}}</p>
+						</div>
 					</div>
-					<div class="info-container">
-						<h1 class="project-title">{{project.title}}</h1>
-						<p>{{project.description}}</p>
+					<div  class="col-md-3 project" >
+						<div class="img-container">
+							<div style="background-image: url('{{project.large.url}}');"></div>
+						</div>
+						<div class="info-container">
+							<h1 class="project-title">{{project.title}}</h1>
+							<p>{{project.description}}</p>
+						</div>
 					</div>
-				</div>
-				<div  class="col-md-3 project" >
-					<div class="img-container">
-						<div style="background-image: url('{{project.large.url}}');"></div>
-					</div>
-					<div class="info-container">
-						<h1 class="project-title">{{project.title}}</h1>
-						<p>{{project.description}}</p>
-					</div>
-				</div>
-			{% endfor %}
+				{% endfor %}
+			</div>
 		</div>
 	</div>
-</div>
 </div>
