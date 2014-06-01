@@ -30,7 +30,7 @@ class Projects(models.Model):
                             options={'quality': 60})
     description = models.TextField(max_length=2000)
     submit_date = models.DateTimeField(('date/time submitted'),
-        default=timezone.now())
+                                       default=timezone.now())
     visible = models.BooleanField(default=False)
     user_rating = models.IntegerField(default=0)
     visits = models.IntegerField(default=0)
