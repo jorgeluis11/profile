@@ -6,7 +6,7 @@ from configurations import Configuration, values
 class Common(Configuration):
     BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-    ENVIRONMENT = values.Value(environ_prefix=None, default='DEVELOPMENT')
+    ENVIRONMENT = values.Value(environ_prefix=None, default='Production')
 
     SECRET_KEY = values.SecretValue(environ_prefix=None)
 
