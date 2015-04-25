@@ -60,7 +60,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
-    'south',
+    # 'south',
     'django_extensions',
     'project'
 )
@@ -134,8 +134,9 @@ STATICFILES_FINDERS = (
 )
 ########## END STATIC FILE CONFIGURATION
 
-TEMPLATE_DIRS = (normpath(join(DJANGO_ROOT, 'templates')))
-
+TEMPLATE_DIRS = (
+    os.path.join(DJANGO_ROOT, 'templates'),
+)
 ########## MEDIA CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#media-root
 MEDIA_ROOT = normpath(join(SITE_ROOT, 'media'))

@@ -48,3 +48,7 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+DEBUG = False
+
+TEMPLATE_DEBUG = False
