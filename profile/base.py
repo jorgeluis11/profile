@@ -61,7 +61,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.humanize',
     # 'south',
-    'django_extensions',
+    # 'django_extensions',
     'project'
 )
 

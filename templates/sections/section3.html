@@ -5,15 +5,15 @@
 				<center>
 					<h1 id="current-projects">
 						<br>
-						CURRENT PROJECTS
+						My Work
 						<span class="visible-xs"></span>
-						<span id="and-sign">&#38;</span>
-						<span class="visible-xs"></span>
-						PREVIOUS WORK 
-						<br>
-						<span class="visible-xs"></span>
+						<!-- <span id="and-sign">&#38;</span> -->
+						<!-- <span class="visible-xs"></span> -->
+						<!-- PREVIOUS WORK
+						<br> -->
+						<!-- <span class="visible-xs"></span> -->
 
-						<span style="color:#888888; font-size:.8em;">(Section Working in Progress)</span>
+						<!-- <span style="color:#888888; font-size:.8em;">(Section Working in Progress)</span> -->
 
 					</h1>
 				</center>
@@ -27,19 +27,19 @@
 			<div style="clear:both;" class="clear"></div>
 										<hr>
 									-->
-			<div>
+			<center>
 				{% for project in projects  %}
-					<a  class="col-md-3 project" href="{{project.url}}" >
+					<a  class="col-sm-4 project" href="{{project.url}}" target="_blank" >
 						<div class="img-container">
 							<div style="background-image: url('{{project.large.url}}');"></div>
 						</div>
-						<div class="info-container">
+						<div class="info-container  visible-lg">
 							<h1 class="project-title">{{project.title}}</h1>
 							<p>{{project.description}}</p>
 						</div>
 					</a>
 				{% endfor %}
-			</div>
+			</center>
 		</div>
 	</div>
 </div>

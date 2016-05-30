@@ -5,11 +5,15 @@ body
 	background-color: #fff;
 }
 
+.margin-top-sm{
+	margin-top:20px;
+}
+
 @font-face {
 font-family: "Proxima Nova";
 src: url(/static/fonts/ProximaNova-Regular.otf) format("truetype");
 }
-body, .proxima-nova { 
+body, .proxima-nova {
     font-family: "Proxima Nova", Helvetica, Arial, sans-serif;;
 }
 
@@ -18,7 +22,7 @@ font-family: "FacitWeb";
 src: url(/static/fonts/FacitWeb.ttf) format("truetype");
 }
 
-.facit-web { 
+.facit-web {
     font-family: "FacitWeb", Garamond, Georgia, serif;
 
 }
@@ -176,7 +180,7 @@ a:hover
 {
 	width:100%;
 	margin-bottom: 5%;
-	
+
 }
 
 #welcome
@@ -184,13 +188,17 @@ a:hover
 	font-size: 2.6em;
 }
 
+.name{
+	font-size: 1.7em;
+}
+
 /*Section 1*/
 #section-1
 {
-	padding-top: 20%;
-	padding-bottom: 20%;
+	padding-top: 14%;
+	padding-bottom: 22%;
 	/*opacity: 0;*/
-	
+
 }
 
 #section-1>div
@@ -204,7 +212,7 @@ a:hover
 
 #profile-pic
 {
-	
+
 }
 
 @-webkit-keyframes fadein {
@@ -262,7 +270,7 @@ a:hover
 
 .project
 {
-	width: 300px;
+	/*width: 300px;*/
 	margin: 5px auto;
 
 }
@@ -286,7 +294,7 @@ a:hover
 	padding-right: 1%;
 	font-size: 1.2em;
 	position: absolute;
-	width: 90%;
+	width: 100%;
 	z-index: 100;
 	background: rgba( 26,26,26,0.95);
 	color: white;
@@ -296,8 +304,8 @@ a:hover
 
 	-webkit-transition: opacity .1s ease;
 	transition: opacity .1s ease;
-	
-	
+
+
 }
 
 
@@ -312,8 +320,8 @@ a:hover
 
 .img-container{
 	width: 100%;
-  height: 265px;
-      box-shadow: 5px 10px 20px #777777;
+  height: 265px !important;
+  box-shadow: 5px 10px 20px #777777;
 
 }
 
@@ -325,8 +333,8 @@ a:hover
 	/*color: #4299DC;*/
 /*	-webkit-transition: : top .1s ease;
 	transition: top .1s ease;*/
-	background-size: 125% 115%;	
-	
+	background-size: 125% 115%;
+
 }
 
 .img-container>div{
@@ -346,7 +354,7 @@ a:hover
 
 .project-title
 {
-	margin-top:0; 
+	margin-top:0;
 	padding-top: 10px;
 }
 
@@ -363,7 +371,7 @@ a:hover
 {
 	position: absolute;
 	bottom: 86px;
-	left: 50%;
+	left: 48%;
 	width: 10px;
 	height: 10px;
 	-webkit-animation: down 2.5s  ease;
@@ -390,8 +398,8 @@ a:hover
 	border-radius: 5px;
 	padding: 4px 12px;
 	height: 60px;
-	
-	
+
+
 }
 
 @-webkit-keyframes down
@@ -406,7 +414,7 @@ a:hover
 }
 
 .tag-blue:hover
-{	
+{
 	-webkit-animation: pulse 1s  infinite;
 	-moz-animation:  pulse 1s infinite;
 	-o-animation:   pulse  1s  infinite;
@@ -460,7 +468,7 @@ a:hover
 	color:white;
 }
 
-.box 
+.box
 {
 	text-align: center;
 	color:white !important;
@@ -470,7 +478,7 @@ a:hover
 	color:white ;
 }
 
-.facebook 
+.facebook
 {
 	background-color: #3B5998;
 }
@@ -484,6 +492,22 @@ a:hover
 {
 	background-color: black;
 }
+.email
+{
+	background-color: white;
+	color:#222;
+}
+
+.black{
+	color:#333;
+}
+
+.black:hover{
+	color:#333;
+	text-decoration: none !important;
+	border:none !important;
+}
+
 .socia-network
 {
 	margin-top: 4%;
@@ -595,7 +619,10 @@ ul.social li:hover a p {
 /*Media Query for less than 720px*/
 
 @media (max-width: 1024px) {
- 	
+	.navbar-nav{
+		    padding-top: 7px;
+	}
+
  	#section-1
  	{
  		padding: 22% 0;
@@ -626,7 +653,7 @@ ul.social li:hover a p {
   }
  }
 @media (max-width: 1024px) {
-  
+
 
 
 .facebook-size
@@ -716,6 +743,10 @@ ul.social li:hover a p {
 	{
 		font-size: 1.49em;
 	}
+
+	.img-container{
+		height: 230px !important;
+	}
 }
 
 @media(max-width: 720px)
@@ -728,7 +759,20 @@ ul.social li:hover a p {
 		margin-top: 5px;
 	}
 
-	
+	.img-container{
+		height: 330px !important;
+	}
+
+
+}
+@media(max-width: 500px)
+{
+
+	.navbar-nav
+	{
+		font-size: 80% !important;
+	}
+
 }
 
 @media (max-width: 384px)
@@ -762,6 +806,10 @@ ul.social li:hover a p {
 		100% {
 			padding: 0 0;
 		}
+	}
+
+	.img-container{
+		height: 280px !important;
 	}
 
 	#section-1
@@ -812,11 +860,11 @@ ul.social li:hover a p {
 
 @media(max-width: 320px)
 {
-	
+
 	.project
 	{
 		width: auto;
-	}	
+	}
 
 	#section-2
 	{
@@ -872,9 +920,8 @@ ul.social li:hover a p {
 	{
 		margin-bottom: 0px !important;
 	}
-	
+
 }
 
 
 /*End Media Query for less than 720px*/
-

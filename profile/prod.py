@@ -1,6 +1,6 @@
 from .base import *
 # Parse database configuration from $DATABASE_URL
-import dj_database_url
+# import dj_database_url
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
@@ -37,7 +37,7 @@ import dj_database_url
 # )
 # TEMPLATE_DEBUG = False
 
-from .base import *
+# from .base import *
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases

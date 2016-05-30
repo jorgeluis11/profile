@@ -32,8 +32,9 @@ class Common(Configuration):
 
         # Third Party
         'south',
+        'imagekit',
         'debug_toolbar',
-        'django_extensions',
+        # 'django_extensions',
         'storages',
         'allauth',
         'allauth.account',
