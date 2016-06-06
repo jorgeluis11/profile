@@ -16,3 +16,4 @@ six==1.6.1
 South==0.8.4
 sqlparse==0.1.11
 static==1.0.2
+urllib3==1.15.1
