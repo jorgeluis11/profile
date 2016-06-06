@@ -9,6 +9,17 @@ body
 	margin-top:20px;
 }
 
+.link-blue{
+	color:#00256F;
+}
+
+.link-blue:hover{
+	color:#00256F;
+}
+.link-blue:visited{
+	color:#00256F;
+}
+
 @font-face {
 font-family: "Proxima Nova";
 src: url(/static/fonts/ProximaNova-Regular.otf) format("truetype");
@@ -195,7 +206,7 @@ a:hover
 /*Section 1*/
 #section-1
 {
-	padding-top: 14%;
+	padding-top: 12%;
 	padding-bottom: 22%;
 	/*opacity: 0;*/
 
@@ -320,7 +331,7 @@ a:hover
 
 .img-container{
 	width: 100%;
-  height: 265px !important;
+  height: 320px !important;
   box-shadow: 5px 10px 20px #777777;
 
 }
@@ -507,6 +518,16 @@ a:hover
 	text-decoration: none !important;
 	border:none !important;
 }
+.black:visited{
+	color:#333;
+	text-decoration: none !important;
+	border:none !important;
+}
+
+.no-underline{
+	text-decoration: none !important;
+	border:none !important;
+}
 
 .socia-network
 {
@@ -592,6 +613,13 @@ ul.social li:hover a p {
 /*			background-color: #1A1A1A;
 */
 }
+.custom-caption{
+	margin-left: 10%;
+  margin-top: 10px;
+	text-align: center;
+}
+
+
 
 #about-me
 {
@@ -619,8 +647,9 @@ ul.social li:hover a p {
 /*Media Query for less than 720px*/
 
 @media (max-width: 1024px) {
-	.navbar-nav{
-		    padding-top: 7px;
+
+	.custom-carousel{
+		margin-top: 40px;
 	}
 
  	#section-1
@@ -770,8 +799,17 @@ ul.social li:hover a p {
 
 	.navbar-nav
 	{
+		padding-top: 5px;
 		font-size: 80% !important;
 	}
+
+	.custom-carousel{
+		width: 65%;
+		margin-top: 20px !important;
+		margin: 0 auto;
+	}
+
+
 
 }
 
@@ -784,6 +822,8 @@ ul.social li:hover a p {
 
 	.navbar-nav
 	{
+		padding-top: 2px;
+
 		font-size: 80% !important;
 	}
 
@@ -861,6 +901,8 @@ ul.social li:hover a p {
 @media(max-width: 320px)
 {
 
+
+
 	.project
 	{
 		width: auto;
@@ -893,7 +935,7 @@ ul.social li:hover a p {
 
 	#section-1
 	{
-		padding-top: 25%;
+		padding-top: 32%;
 	}
 	#section-2
 	{

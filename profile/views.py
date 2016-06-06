@@ -5,6 +5,6 @@ from project.models import Projects
 
 def index(request):
     data = {
-    	"projects" : get_list_or_404(Projects.objects.all().order_by("submit_date"))
+    	"projects" : get_list_or_404(Projects.objects.all().order_by("-submit_date"))
     	}
     return render(request,"index.html",data);
