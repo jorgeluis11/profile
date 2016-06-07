@@ -32,7 +32,7 @@
 				{% for project in projects  %}
 					<a  class="col-sm-4 project" href="{{project.url}}" target="_blank" >
 						<div class="img-container">
-							<div style="background-image: url('{{project.large.url}}');"></div>
+							<div style="background-image: url('{{project.large.url}}');" alt="{{project.title}}"></div>
 						</div>
 						<div class="info-container  visible-lg">
 							<h1 class="project-title">{{project.title}}</h1>
