@@ -776,6 +776,11 @@ ul.social li:hover a p {
 	.img-container{
 		height: 230px !important;
 	}
+
+	#section-4
+	{
+		padding: 30% 0;
+	}
 }
 
 @media(max-width: 720px)
@@ -791,6 +796,7 @@ ul.social li:hover a p {
 	.img-container{
 		height: 330px !important;
 	}
+
 
 
 }
@@ -894,6 +900,11 @@ ul.social li:hover a p {
 	#hello
 	{
 		margin-bottom: 15px;
+	}
+
+	#section-4
+	{
+		padding: 30% 0;
 	}
 
 }
